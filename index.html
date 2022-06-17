@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elegance </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    
+    
+    
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <div class="card" >
+            <div class="card-content">
+                <img src="img/header/logo.jpg" alt="" class="content-img">
+                <div class="discription">
+                    <div class="fullName">Tymoshenko Sergey</div>
+                    <div class="email">E-mail: tss@ukr.net</div>
+                    <div class="gitHub"><a href="https://github.com/sergeytymoshenko50">GitHub</a></div>
+                    <div class="phone">+38 (063) 376 39 02</div>
+                </div>
+            </div>
+            <div class="close" onclick="card()"></div>
+        </div>
+        <header class="header-wrap">
+            <div class="header-top">
+                <div class="logo" onclick="card()">
+                    <img src="img/header/logo.jpg" alt="logo" class="logo-img">                    
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list" onclick="showMenu()">
+                        <li class="list-item "><a href="#header">home</a></li>
+                        <li class="list-item" data-wow-delay="0.2s"><a href="#about">about me</a></li>
+                        <li class="list-item" data-wow-delay="0.4s"><a href="#work">my work</a></li>
+                        <li class="list-item" data-wow-delay="0.6s"><a href="#contact">contact me</a></li>
+                    </ul>
+                    <img src="img/header/menu.png" alt="menu" class="mob-menu" onclick="showMenu()">
+                </nav>  
+            </div> 
+            <div class="header-content">
+                <h1 class="hc-title">welcome to my portfolio page</h1>
+                <div class="short-line"></div>
+                <div class="hc-text">Success comes to the one who does what he loves most! </rem></div>
+            </div>                
+        </header>
+    </div>
+    <div class="about" id="about">
+        <div class="about-wrap">
+            <h1 class="about-title">about me</h1>
+            <div class="short-line"></div>
+            <div class="about-text">I am a beginner in the field with no experience but a strong desire to learn and develop.</div>
+        </div>
+    </div>
+    <div class="works" id="work">
+        <div class="works-wrap">
+            <h1 class="works-title">my works</h1>
+            <div class="short-line"></div>
+            <div class="works-nav">
+                <ul class="nav-list">
+                    <li><a href="#work" class="list-item active">all</a></li>
+                    <li><a href="#work" class="list-item" >flex-box</a></li>
+                    <li><a href="#work" class="list-item" >grid</a></li>
+                    <li><a href="#work" class="list-item" >bootstrap</a></li>
+                    <li><a href="#work" class="list-item" >mobile</a></li>
+                </ul>
+            </div>
+            <div class="works-list">
+                <div class="item" >
+                    <a href="https://github.com/sergeytymoshenko50/pirol" target="_blank">
+                        <img src="img/works/start.png" alt="">
+                        <div class="wrap-img" ></div>
+                    </a>
+                    
+                </div>
+                <div class="item" >
+                    <img src="img/works/1.png" alt="pirol">
+                    <div class="wrap-img"></div>
+                </div>
+                <div class="item" >
+                    <img src="img/works/2.png" alt="">
+                    <div class="wrap-img">                        
+                    </div>
+                </div>
+                <div class="item" >
+                    <img src="img/works/3.png" alt="">
+                    <div class="wrap-img">                        
+                    </div>
+                </div>
+                <div class="item" >
+                    <img src="img/works/4.png" alt="">
+                    <div class="wrap-img">                        
+                    </div>
+                </div>
+                <div class="item" >
+                    <img src="img/works/5.png" alt="">
+                    <div class="wrap-img">                        
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-more">more</a>
+        </div>
+    </div>        
+    <div class="skills">
+        <div class="skills-wrap">
+            <h1 class="skills-title title ">my skills</h1>
+            <div class="skills-discription">                
+                <div class="disc-progres">
+                    <div class="prog-title">photoshop</div>
+                    <div class="prog-line photo"></div> 
+                    <div class="prog-title">html5</div>
+                    <div class="prog-line html"></div>
+                    <div class="prog-title">css3</div>
+                    <div class="prog-line css"></div>
+                    <div class="prog-title">javascript</div>            
+                    <div class="prog-line js"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="get" id="contact">
+        <div class="get-title title">get in touch</div>
+        <div class="get-social">
+            <a href="#"><img src="img/getInTouch/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="img/getInTouch/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="img/getInTouch/linkiden.png" alt="linkiden"></a>
+            <a href="#"><img src="img/getInTouch/justV.png" alt="gmail"></a>
+            
+        </div>
+        <form action="php/mail.php" class="contact" method="POST">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Site Name">
+                <input type="hidden" name="admin_email" value="tss@ukr.net">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+        
+                <input type="text" name="Name" placeholder="name" required>
+                <input type="text" name="E-mail" placeholder="E-mail" required>
+                <input type="text" name="message" placeholder="message" class="message">
+                <button>Send</button>
+        </form>
+    </div>
+    
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>   
+    
+</body>
+</html>

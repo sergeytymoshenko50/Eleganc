@@ -1,0 +1,99 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  font-family: $lato;
+  padding: 115px 0 120px 0;
+  .title {
+    &::before {
+      background: #000;
+      right: 47%;
+    }
+  }
+  .skills-wrap {
+    text-align: center;
+    max-width: 1170px;
+    width: 100%;
+    .skills-discription {
+      display: flex;
+      justify-content: space-between;
+      .disc-text {
+        max-width: 522px;
+        width: 100%;
+        color: #6c6c6c;
+        font-size: 20px;
+        text-align: start;
+        .text-title {
+          color: #000;
+          text-transform: uppercase;
+          font-size: 28px;
+        }
+      }
+      .disc-progres {
+        max-width: 570px;
+        width: 100%;
+        text-align: start;
+        text-transform: uppercase;
+        color: #7a7575;
+        margin: auto;
+        padding: 0 10px;
+        .prog-line {
+          position: relative;
+          height: 13px;
+          width: 100%;
+          background: #dbd7d7;
+          border-radius: 15px;
+          margin-bottom: 30px;
+          margin-top: 10px;
+        }
+        .photo {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 13px;
+            width: 25%;
+            background: #005494;
+            border-radius: 15px;
+          }
+        }
+        .html {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 13px;
+            width: 70%;
+            background: #005494;
+            border-radius: 15px;
+          }
+        }
+        .css {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 13px;
+            width: 70%;
+            background: #005494;
+            border-radius: 15px;
+          }
+        }
+        .js {
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 13px;
+            width: 30%;
+            background: #005494;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
